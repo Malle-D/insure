@@ -1,0 +1,113 @@
+.footer{
+   padding: 65px 0px;
+   position: relative;z-index: 1;
+   &::before{
+      content: "";
+      background-image: url(../../img/footer-before.png);
+      width: 530px;
+      height: 225px;
+   }
+}
+.footer__networks-box{
+   display: flex;
+   align-items: center;
+   padding-bottom: 35px;
+   border-bottom: 1px solid #DADADA;
+}
+.footer__logo{
+   margin-right: auto;
+}
+.networks{
+   display: flex;
+   align-items: center;
+   margin: 0px;
+   padding: 0px;
+}
+.networks__item{
+   list-style: none;
+}
+.networks__item + .networks__item{
+   margin-left: 16px;
+}
+
+.networks__link > svg > path{
+   fill: #837D88;
+   transition: 0.2s ease;
+}
+.networks__link:hover > svg > path{
+   fill: #2C2830;
+}
+
+.footer__links-box{
+   display: flex;
+   padding-top: 48px;
+}
+.links{
+   margin: 0px;
+   padding: 0px;
+   width: 100%;
+   max-width: 255px;
+}
+.links +.links{
+   margin-left: 30px;
+}
+.links__item{
+   list-style: none;
+}
+.links__item:nth-child(1){
+   margin-bottom: 36px;
+}
+.links__item + .links__item{
+   margin-top: 16px;
+}
+.links__hidding{
+   font-family: "Karla";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 13px;
+   line-height: 15px;
+   letter-spacing: 1.5px;
+   color: #837D88;
+}
+.links__link{
+   font-family: "Karla";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 13px;
+   line-height: 15px;
+   letter-spacing: 1.5px;
+   text-decoration: none;
+   color: #2D2641;
+   &:hover{
+      text-decoration: underline;
+   }
+}
+
+@media only screen and (max-width:426px) {
+   .footer{
+      background-color: #FAFAFA;
+      &::before{
+         
+      }
+   }
+   .footer__networks-box{
+      flex-direction: column;
+      padding-top: 80px;
+      padding-bottom: 40px;
+   }
+   .footer__logo{
+      margin-right: 0;
+      margin-bottom: 32px;
+   }
+   .footer__links-box{
+      flex-direction: column;
+      align-items: center;
+   }
+   .links +.links{
+      margin-left: 0px;
+      margin-top: 40px;
+   }
+   .links__item{
+      text-align: center;
+   }
+}
